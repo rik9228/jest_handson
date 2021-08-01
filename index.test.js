@@ -1,4 +1,4 @@
-import { addString, toNumber, filterOrange } from "./index";
+import { addString, toNumber, filterOrange, judgeNumberAll } from "./index";
 
 //  lesson01
 describe("addString", () => {
@@ -26,8 +26,8 @@ describe("toNumber", () => {
   });
 });
 
+//  lesson03
 describe("filterOrange", () => {
-  //  lesson03
   test("arr contains 'orange', return a new array with only 'orange' in it", () => {
     const fruit = ["orange", "apple", "peach"];
     expect(filterOrange(fruit)).toEqual(["orange"]);
@@ -37,4 +37,10 @@ describe("filterOrange", () => {
     const fruit = ["apple", "peach"];
     expect(filterOrange(fruit)).toEqual([]);
   });
+});
+
+// advanced
+test("arr including 1 all, return true", () => {
+  const nums = [1, 1, 1];
+  expect(judgeNumberAll(nums)).toBeTruthy();
 });

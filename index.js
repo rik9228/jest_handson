@@ -16,3 +16,8 @@ export function toNumber(str) {
 export function filterOrange(arr) {
   return arr.filter((e) => e === "orange");
 }
+
+//  advanced
+export function judgeNumberAll(arr) {
+  return arr.every((e) => e === 1);
+}

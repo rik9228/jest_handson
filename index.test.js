@@ -40,7 +40,9 @@ describe("filterOrange", () => {
 });
 
 // advanced
-test("arr including 1 all, return true", () => {
-  const nums = [1, 1, 1];
-  expect(judgeNumberAll(nums)).toBeTruthy();
+describe("judgeNumberAll", () => {
+  test("arr including 1 all, return true", () => {
+    const nums = [1, 1, 1];
+    expect(judgeNumberAll(nums)).toBeTruthy();
+  });
 });
